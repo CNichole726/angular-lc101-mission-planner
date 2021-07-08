@@ -40,10 +40,9 @@ export class CrewComponent implements OnInit {
   
   memberExists(newName: string) {
     for(let i = 0; i < this.crew.length; i++) {
-      // if(this.crew[i].name === newName) {
-      //   return true;
-      // }
-    console.log(this.crew[i]);
+      if(this.crew[i]['name']) === newName) {
+        return true;
+      }
     }
     return false;
   }
